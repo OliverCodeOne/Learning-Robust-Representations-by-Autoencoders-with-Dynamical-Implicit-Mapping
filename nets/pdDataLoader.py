@@ -13,6 +13,6 @@ class DataFrameDataset(Dataset):
 
     def __getitem__(self, index):
         feature = torch.Tensor(self.features[index])
-        label = self.labels[index]  # 将标签转换为张量
+        label = self.labels[index]
 
         return feature, label
